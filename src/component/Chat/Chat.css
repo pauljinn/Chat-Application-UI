@@ -1,0 +1,86 @@
+.chatPage {
+  background-color: rgb(39, 38, 38);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chatContainer {
+  background-color: white;
+  box-sizing: border-box;
+  width: 50%;
+  height: 60%;
+}
+
+.header {
+  background-color: crimson;
+  height: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header > h2 {
+  color: white;
+  margin: 2vmax;
+}
+
+.header img {
+  margin: 2vmax;
+  transition: all 0.3s;
+}
+
+.header > a > img:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.chatBox {
+  /* border: 0.2vmax solid black; */
+  height: 70%;
+  overflow-y: auto;
+}
+
+.inputBox {
+  height: 15%;
+  display: flex;
+}
+
+#chatInput {
+  border: none;
+  border-top: 0.2vmax solid rgb(77, 75, 75);
+  width: 80%;
+  background-color: white;
+  padding: 2vmax;
+  outline: none;
+  font-size: 1.2vmax;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sendBtn {
+  background-color: crimson;
+  color: white;
+  border: none;
+  width: 20%;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.sendBtn:hover {
+  background-color: rgb(156, 14, 42);
+}
+
+.sendBtn > img {
+  width: 2.5vmax;
+  /* Higher value in brightness function to make the 
+  image darker and invert() inverts the color to white */
+  filter: brightness(100) invert();
+  transition: all 0.3s;
+}
+
+.sendBtn:hover img {
+  /* Make the send button image to move right when we hover over send button */
+  transform: translateX(10px);
+}

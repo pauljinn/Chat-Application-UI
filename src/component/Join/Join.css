@@ -1,0 +1,63 @@
+.JoinPage {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(39, 38, 38);
+  display: flex;
+  /* Horizontal centralizing */
+  justify-content: center;
+  /* Vertical centralizing */
+  align-items: center;
+}
+
+.JoinContainer {
+  /* border: 2px solid white; */
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.JoinContainer > img {
+  width: 10vmax;
+}
+
+.JoinContainer > h1 {
+  color: white;
+  font-size: 3vmax;
+  font-family: "ROBOTO";
+  width: 25vmax;
+  border-bottom: 0.2vmax solid white;
+  text-align: center;
+  padding: 1vmax;
+  box-sizing: border-box;
+}
+
+#joinInput {
+  width: 25vmax;
+  padding: 2vmax;
+  border: none;
+  outline: none;
+  font-size: 1.2vmax;
+  margin: 1.8vmax;
+  box-sizing: border-box;
+  font-family: "ROBOTO";
+}
+
+.joinbtn {
+  width: 25vmax;
+  padding: 2vmax;
+  border: none;
+  outline: none;
+  color: white;
+  font-family: "ROBOTO";
+  font-size: 1.2vmax;
+  background-color: crimson;
+  /* This will make the make the border and padding to fit into the width and height specified by us. */
+  box-sizing: border-box;
+  /* Used for transitioning the color of button to dark crimson smoothly by taking 0.3 sec. */
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.joinbtn:hover {
+  background-color: rgb(136, 10, 35);
+}
